@@ -308,10 +308,6 @@
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 // Check if already logged in
-                if (localStorage.getItem('fadwa_logged_in') === 'true') {
-                    window.location.href = 'port.html';
-                }
-                
                 const usernameInput = document.getElementById('username');
                 const passwordInput = document.getElementById('password');
                 const loginBtn = document.getElementById('btn');
