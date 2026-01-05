@@ -309,7 +309,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 // Check if already logged in
                 if (localStorage.getItem('fadwa_logged_in') === 'true') {
-                    window.location.href = '../portfolio/port.html';
+                    window.location.href = 'port.html';
                 }
                 
                 const usernameInput = document.getElementById('username');
@@ -343,7 +343,7 @@
                         
                         // Redirect to portfolio after 1 second
                         setTimeout(() => {
-                                window.location.href = '../portfolio/port.html';
+                                window.location.href = 'port.html';
                         }, 1000);
                         
                         return true;
@@ -409,7 +409,7 @@
             window.logout = function() {
                 localStorage.removeItem('fadwa_logged_in');
                 localStorage.removeItem('fadwa_username');
-                window.location.href = '../login/index.html';
+                window.location.href = 'index.html';
             }
         </script>
     </body>
